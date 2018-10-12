@@ -1,0 +1,95 @@
+        /*app media queries */
+/* smallest screens */
+@media only screen and (min-width :320px){
+    .main{max-width: 1000px;max-height: 1200px;overflow: hidden;}
+    div#login{
+        text-align: center;
+        width: 200px;
+        height: 300px;
+        margin: 0px auto;
+        border: none;
+        
+
+    
+    }
+    div label{font-size: 15px;}
+    div input{padding-bottom: 10px;width:150px;min-height: 8px;}
+    div input[value]{background-color: lightslategray;font-size: 25px;color: white;cursor: pointer;border: none;}
+    div input[placeholder]{text-align: center;padding-bottom: 10px; font-size: 15px;border: none;}               
+    div#login form input#submit{background-color: rgba(0,100,255);}
+}
+/* small screens */
+@media only screen and (min-width :480px){
+    .main{max-width: 1000px;max-height: 1200px;overflow: hidden;}
+    div#login{
+        text-align: center;
+        width: 400px;
+        height: 300px;
+        margin: 0px auto;
+        border: none;
+
+    
+    }
+    div label{font-size: 25px;}
+    div input{padding-bottom: 25px;width:220px;min-height: 8px;}
+    div input[value]{background-color: lightslategray;font-size: 25px;color: white;cursor: pointer;border: none;}
+    div input[placeholder]{text-align: center;padding-bottom: 15px; font-size: 15px;border: none;}
+    div#login form input#submit{background-color: rgba(0,100,255);}
+    
+    
+}
+/* medium screens */
+@media only screen and (min-width :768px){
+    .main{max-width: 1000px;max-height: 1200px;overflow: hidden;}
+    div#login{
+        text-align: center;
+        width: 350px;
+        height: 350px;
+        margin: 0px auto;
+        border:none;
+    
+    
+    }
+    div label{font-size: 25px;}
+    div input{padding-bottom: 35px;width:270px;min-height: 8px;}
+    div input[value]{background-color: lightslategray;font-size: 25px;color: white;cursor: pointer;border: none;}
+    div input[placeholder]{text-align: center;padding-bottom: 20px; font-size: 15px;border: none;} 
+    div#login form input#submit{background-color: rgba(0,100,255);}
+}
+/* large screens */
+@media only screen and (min-width :992px){
+    .main{max-width: 1000px;max-height: 1200px;overflow: hidden;}
+    div#login{
+        text-align: center;
+        width: 400px;
+        height: 400px;
+        margin: 0px auto;
+        border: none;
+    
+    
+    }
+    div label{font-size: 25px;}
+    div input{padding-bottom: 35px;width:270px;min-height: 8px;}
+    div input[value]{background-color: lightslategray;font-size: 20px;color: white;cursor: pointer;border: none;}
+    div input[placeholder]{text-align: center;padding-bottom: 20px; font-size: 15px;border: none;}
+    div#login form input#submit{background-color: rgba(0,100,255);}
+}
+/* very large screens */
+@media only screen and (min-width :1200px){
+.main{max-width: 1200px;max-height: 1200px;overflow: hidden;}
+div#login{
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    margin: 0px auto;
+    border: none;
+    
+    
+
+}
+div#login form label{font-size: 25px;text-align: right;}
+div#login form input{padding-bottom: 35px;width:270px;min-height: 8px; float: center;}
+div#login form input[value]{background-color: rgba(0,100,255);font-size: 25px;color: white;cursor: pointer;border: none;}
+div#login form input[placeholder]{text-align: center;padding-bottom: 20px; font-size:22px;border: none; }
+div#login form input#submit{background-color: rgba(0,100,255);}
+}

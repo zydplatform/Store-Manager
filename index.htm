@@ -5,115 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <style>
-        /*app media queries */
-/* smallest screens */
-@media only screen and (min-width :320px){
-    .main{max-width: 1000px;max-height: 1200px;overflow: hidden;}
-    div#login{
-        text-align: center;
-        width: 200px;
-        height: 300px;
-        margin: 0px auto;
-        border: solid 5px;
-        border-color: lightslategray;
-        border-radius: 20%;
-    
-    }
-    div label{font-size: 15px;}
-    div input{padding-bottom: 10px;width:150px;min-height: 8px; border-radius: 20px;}
-    div input[value]{background-color: lightslategray;font-size: 25px;color: white;cursor: pointer;border: none;}
-    div input[placeholder]{text-align: center;padding-bottom: 10px; font-size: 15px;border: none;}
-
-}
-/* small screens */
-@media only screen and (min-width :480px){
-    .main{max-width: 1000px;max-height: 1200px;overflow: hidden;}
-    div#login{
-        text-align: center;
-        width: 300px;
-        height: 300px;
-        margin: 0px auto;
-        border: solid 5px;
-        border-color: lightslategray;
-        border-radius: 20%;
-    
-    }
-    div label{font-size: 25px;}
-    div input{padding-bottom: 25px;width:220px;min-height: 8px; border-radius: 20px;}
-    div input[value]{background-color: lightslategray;font-size: 25px;color: white;cursor: pointer;border: none;}
-    div input[placeholder]{text-align: center;padding-bottom: 15px; font-size: 15px;border: none;}
-    
-    
-}
-/* medium screens */
-@media only screen and (min-width :768px){
-    .main{max-width: 1000px;max-height: 1200px;overflow: hidden;}
-    div#login{
-        text-align: center;
-        width: 350px;
-        height: 350px;
-        margin: 0px auto;
-        border: solid 5px;
-        border-color: lightslategray;
-        border-radius: 20%;
-    
-    }
-    div label{font-size: 25px;}
-    div input{padding-bottom: 35px;width:270px;min-height: 8px; border-radius: 20px;}
-div input[value]{background-color: lightslategray;font-size: 25px;color: white;cursor: pointer;border: none;}
-div input[placeholder]{text-align: center;padding-bottom: 20px; font-size: 15px;border: none;}
-
-}
-/* large screens */
-@media only screen and (min-width :992px){
-    .main{max-width: 1000px;max-height: 1200px;overflow: hidden;}
-    div#login{
-        text-align: center;
-        width: 400px;
-        height: 400px;
-        margin: 0px auto;
-        border: solid 5px;
-        border-color: lightslategray;
-        border-radius: 20%;
-    
-    }
-    div label{font-size: 25px;}
-    div input{padding-bottom: 35px;width:270px;min-height: 8px; border-radius: 20px;}
-    div input[value]{background-color: lightslategray;font-size: 20px;color: white;cursor: pointer;border: none;}
-    div input[placeholder]{text-align: center;padding-bottom: 20px; font-size: 15px;border: none;}
-     
-}
-/* very large screens */
-@media only screen and (min-width :1200px){
-.main{max-width: 1200px;max-height: 1200px;overflow: hidden;}
-div#login{
-    text-align: center;
-    width: 400px;
-    height: 400px;
-    margin: 0px auto;
-    border: solid 5px;
-    border-color: lightslategray;
-    border-radius: 20%;
-
-}
-div label{font-size: 25px;}
-div input{padding-bottom: 35px;width:270px;min-height: 8px; border-radius: 20px;}
-div input[value]{background-color: lightslategray;font-size: 25px;color: white;cursor: pointer;border: none;}
-div input[placeholder]{text-align: center;padding-bottom: 20px; font-size:22px;border: none; }
-
-}
-    </style>
     <title>Login | Store Manager</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body class="main">
-    <div id="login"><h1>Store Manager</h1><hr style="color: lightslategray;">
+    <div id="login">
+        <div class="logo"></div>
+        <h1>Store Manager</h1><hr style="color: lightslategray;">
+        <form action="" method="post">
         <div class="input"><label for="user">Username</label><br>
-            <input type="text" name="username" id="user" required placeholder="enter user name"><br>
+            <input type="text" name="username" id="user"  placeholder="enter user name" required><br>
             <label for="user">Password</label><br>
-            <input type="password" name="password" id="password" required placeholder="enter user password"><br><br>
-            <input id="submit" type="submit" value="Submit">
+            <input type="password" name="password" id="password"  placeholder="enter user password" required><br><br>
+            <input id="submit" type="submit" value="Submit" onsubmit="UserLogin()">
         </div>
+        </form>
     </div>
+    <script src="login.js"></script>
 </body>
 </html>
